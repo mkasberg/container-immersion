@@ -1,0 +1,8 @@
+# Jekyll Stuff
+_site
+.sass-cache
+.jekyll-metadata
+
+# Ruby Gems & Bundler Stuff for Jekyll
+.bundle
+vendor
