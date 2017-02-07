@@ -22,18 +22,24 @@
     </section>
 
     <section class="main-content">
-      {{ content }}
 
-        <div>
-        {% if page.previous.url %}
-        <a class="alignleft" href="{{ page.previous.url | prepend: site.github.url }}">{{ page.previous.title }}</a>
-        {% endif %}
-        <a class="aligncenter" href="{{ site.github.url }}/toc.html">Table of Contents</a>
-        {% if page.next.url %}
-        <a class="alignright" href="{{ page.next.url | prepend: site.github.url }}">{{ page.next.title}}</a>
-        {% endif %}
-        </div>
-        <div style="clear: both;"></div>
+        <h2>Table of Contents</h2>
+    
+        <ol>
+            {% for post in site.posts reversed %}
+            <li><a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ol>
+
+        <p>The following sections are planned, but not yet written:</p>
+        <ol>
+            <li>Container Persistence (or lack thereof)</li>
+            <li>A simple Apache server</li>
+            <li>docker logs, docker ps</li>
+            <li>Add PHP to container</li>
+            <li>Custom Dockerfiles</li>
+            <li>Add a database with docker-compose</li>
+        </ol>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
