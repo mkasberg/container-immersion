@@ -1,7 +1,14 @@
 # Docker Immersion
 🐳 A tour that walks through the fundamentals of Docker.
 
-## [Start Docker Immersion](https://mkasberg.github.io/docker-immersion)
+Docker Immersion is not yet complete. (I plan on writing several more lessons
+and then tweaking all of them.) With that being said, it is off to a great start
+and is already useable. With that disclaimer in mind...
+
+Go to [**Docker Immersion**](https://mkasberg.github.io/docker-immersion).
+
+Or, skip ahead to the [Table of
+Contents](https://mkasberg.github.io/docker-immersion/toc.html).
 
 ## About Docker Immersion
 

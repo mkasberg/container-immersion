@@ -22,6 +22,7 @@ Let's make a simple HTML web page. Copy and paste the following HTML into a file
 called `index.html` in your `my-docker-website` folder.
 
 **index.html**
+
 ```
 <html>
 <h1>My Website</h1>
