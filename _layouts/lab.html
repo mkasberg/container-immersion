@@ -1,47 +1,109 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </section>
 
-    <section class="main-content">
-      {{ content }}
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title | default: site.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div>
-        {% if page.previous.url %}
-        <a class="alignleft" href="{{ page.previous.url | prepend: site.github.url }}">{{ page.previous.title }}</a>
-        {% endif %}
-        <a class="aligncenter" href="{{ site.github.url }}/toc.html">Table of Contents</a>
-        {% if page.next.url %}
-        <a class="alignright" href="{{ page.next.url | prepend: site.github.url }}">{{ page.next.title}}</a>
-        {% endif %}
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom "A Docker Immersion" CSS -->
+        <link rel="stylesheet" href="{{ '/assets/css/immersion.css' | relative_url }}">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          {% if page.previous %}
+                          <li>
+                              <a href="{{ page.previous.url | relative_url }}">« Lab {{ page.previous.number }}: {{ page.previous.title }}</a>
+                          </li>
+                          {% endif %}
+                          <li>
+                              <a href="{{ '/toc.html' | relative_url }}">Table of Contents</a>
+                          </li>
+                          {% if page.next %}
+                          <li>
+                              <a href="{{ page.next.url | relative_url }}">Lab {{ page.next.number }}: {{ page.next.title}} »</a>
+                          </li>
+                          {% endif %}
+                      </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h1>Lab {{ page.number }}: {{ page.title }}</h1>
+
+                    {{ content }}
+
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-sm-4 text-left">
+                    {% if page.previous %}
+                    <a href="{{ page.previous.url | relative_url }}">« Lab {{ page.previous.number }}: {{ page.previous.title }}</a>
+                    {% endif %}
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="{{ '/toc.html' | relative_url }}">Table of Contents</a>
+                </div>
+                <div class="col-sm-4 text-right">
+                    {% if page.next %}
+                    <a href="{{ page.next.url | relative_url }}">Lab {{ page.next.number }}: {{ page.next.title}} »</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="row">
+                <footer class="site-footer">
+                  {% if site.github.is_project_page %}
+                    <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+                  {% endif %}
+                  <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+                </footer>
+            </div>
+
         </div>
-        <div style="clear: both;"></div>
+        <!-- /.container -->
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-    </section>
+      <!-- jQuery Version 1.12.4 -->
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+      <!-- Bootstrap Core JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     {% if site.google_analytics %}
       <script type="text/javascript">
