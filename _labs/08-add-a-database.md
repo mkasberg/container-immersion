@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 08: Add a Database"
-date:   2017-01-08 01:00:00 -0700
-categories: lab
+layout: lab
+number: 8
+title:  "Add a Database"
 ---
 
 ### Goals

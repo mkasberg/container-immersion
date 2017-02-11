@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 10: Write a Dockerfile"
-date:   2017-01-10 01:00:00 -0700
-categories: lab
+layout: lab
+number: 10
+title:  "Write a Dockerfile"
 ---
 
 ### Goals

@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 09: Query the Database"
-date:   2017-01-09 01:00:00 -0700
-categories: lab
+layout: lab
+number: 9
+title:  "Query the Database"
 ---
 
 ### Goals

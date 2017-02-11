@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 02: Play With Docker"
-date:   2017-01-02 01:00:00 -0700
-categories: lab
+layout: lab
+number: 2
+title:  "Play With Docker"
 ---
 
 ### Goals

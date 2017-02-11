@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 07: Install Docker Compose"
-date:   2017-01-07 01:00:00 -0700
-categories: lab
+layout: lab
+number: 7
+title:  "Install Docker Compose"
 ---
 
 ### Goals

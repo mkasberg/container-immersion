@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 05: What's Running?"
-date:   2017-01-05 01:00:00 -0700
-categories: lab
+layout: lab
+number: 5
+title:  "What's Running?"
 ---
 
 ### Goals

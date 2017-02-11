@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 06: Serving PHP"
-date:   2017-01-06 01:00:00 -0700
-categories: lab
+layout: lab
+number: 6
+title:  "Serving PHP"
 ---
 
 ### Goals

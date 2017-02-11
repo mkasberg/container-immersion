@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 11: Compose with a Dockerfile"
-date:   2017-01-11 01:00:00 -0700
-categories: lab
+layout: lab
+number: 11
+title:  "Compose with a Dockerfile"
 ---
 
 ### Goals

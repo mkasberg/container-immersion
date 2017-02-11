@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 03: Cleanup"
-date:   2017-01-03 01:00:00 -0700
-categories: lab
+layout: lab
+number: 3
+title:  "Cleanup"
 ---
 
 ### Goals

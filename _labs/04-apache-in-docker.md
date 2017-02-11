@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 04: Apache in Docker"
-date:   2017-01-04 01:00:00 -0700
-categories: lab
+layout: lab
+number: 4
+title:  "Apache in Docker"
 ---
 
 ### Goals

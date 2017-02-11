@@ -26,8 +26,8 @@
         <h2>Table of Contents</h2>
     
         <ol>
-            {% for post in site.posts reversed %}
-            <li><a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a></li>
+            {% for lab in site.labs %}
+            <li><a href="{{ site.github.url }}{{ lab.url }}">{{ lab.title }}</a></li>
             {% endfor %}
         </ol>
 

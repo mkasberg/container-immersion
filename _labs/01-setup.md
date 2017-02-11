@@ -1,8 +1,7 @@
 ---
-layout: post
-title:  "Lab 01: Setup"
-date:   2017-01-01 01:00:00 -0700
-categories: lab
+layout: lab
+number: 1
+title:  "Setup"
 ---
 
 ### Goals
