@@ -25,21 +25,28 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-left">
-                    <h2>Table of Contents</h2>
-
-                    <ol>
-                        {% for lab in site.labs %}
-                        <li><a href="{{ site.github.url }}{{ lab.url }}">{{ lab.title }}</a></li>
-                        {% endfor %}
-                    </ol>
+                <div class="col-lg-offset-2 col-lg-8 text-left">
+                    <img src="{{ '/assets/img/docker_small_h-trans.png' | relative_url }}" alt="Docker logo" />
+                    <p>
+                        Docker is a powerful tool for managing and interacting with Linux Containers.
+                        Understanding its features and capabilities opens new workflows to software
+                        developers, and can change the way code is developed, tested, and released. The
+                        best way to learn Docker is to experience it first-hand.
+                    </p>
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-lg-12 text-right start-text">
+                    <a href="{{ '/labs/01-setup.html' | relative_url }}"><i class="fa fa-arrow-circle-right"></i> Begin Immersion</a>
+                </div>
+            </div>
+
+
             {% include footer_row.html %}
+
         </div>
 
         {% include js.html %}
-
     </body>
 </html>

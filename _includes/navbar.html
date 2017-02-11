@@ -16,7 +16,7 @@
               <ul class="nav navbar-nav">
                   {% if page.previous %}
                   <li>
-                      <a href="{{ page.previous.url | relative_url }}">« Lab {{ page.previous.number }}: {{ page.previous.title }}</a>
+                      <a href="{{ page.previous.url | relative_url }}"><i class="fa fa-chevron-left"></i> Lab {{ page.previous.number }}: {{ page.previous.title }}</a>
                   </li>
                   {% endif %}
                   <li>
@@ -24,7 +24,7 @@
                   </li>
                   {% if page.next %}
                   <li>
-                      <a href="{{ page.next.url | relative_url }}">Lab {{ page.next.number }}: {{ page.next.title}} »</a>
+                      <a href="{{ page.next.url | relative_url }}">Lab {{ page.next.number }}: {{ page.next.title}} <i class="fa fa-chevron-right"></i></a>
                   </li>
                   {% endif %}
               </ul>
