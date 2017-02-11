@@ -1,0 +1,37 @@
+<!-- Begin navbar.html -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  {% if page.previous %}
+                  <li>
+                      <a href="{{ page.previous.url | relative_url }}">« Lab {{ page.previous.number }}: {{ page.previous.title }}</a>
+                  </li>
+                  {% endif %}
+                  <li>
+                      <a href="{{ '/toc.html' | relative_url }}">Table of Contents</a>
+                  </li>
+                  {% if page.next %}
+                  <li>
+                      <a href="{{ page.next.url | relative_url }}">Lab {{ page.next.number }}: {{ page.next.title}} »</a>
+                  </li>
+                  {% endif %}
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- End navbar.html -->
