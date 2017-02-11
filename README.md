@@ -1,16 +1,12 @@
-# Docker Immersion
+# A Docker Immersion
 🐳 A tour that walks through the fundamentals of Docker.
 
-Docker Immersion is not yet complete. (I plan on writing several more lessons
-and then tweaking all of them.) With that being said, it is off to a great start
-and is already useable. With that disclaimer in mind...
-
-Go to [**Docker Immersion**](https://mkasberg.github.io/docker-immersion).
+Go to [**A Docker Immersion**](https://mkasberg.github.io/a-docker-immersion).
 
 Or, skip ahead to the [Table of
-Contents](https://mkasberg.github.io/docker-immersion/toc.html).
+Contents](https://mkasberg.github.io/a-docker-immersion/toc.html).
 
-## About Docker Immersion
+## About _A Docker Immersion_
 
 Many years ago, when [Git](https://git-scm.com/) was a relatively new
 technology, I used [Git Immersion](http://gitimmersion.com/) to learn how to use
@@ -24,8 +20,17 @@ for others as I found Git Immersion to be for me.
 
 ## Contributing
 
-Pull requests welcome. I'm currently developing this site pretty actively, so
-make sure your changes won't conflict with the direction we're heading.
+This project will get much better with more people contributing to it. Please
+contribute by opening issues to document problems or submitting pull requests to
+fix them. All improvements are welcome and appreciated. Consider contributing
+by:
+
+ - Opening issues to document problem or confusing parts of existing labs.
+ - Opening pull requests to make existing labs better.
+ - Opening a pull request to add a new lab. (Please make sure it fits in with
+   the existing scope & sequence of labs.)
+ - Opening a pull request to improve the site's theme.
+ - etc.
 
 ### Setup Dev Environment
 
