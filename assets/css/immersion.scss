@@ -3,7 +3,10 @@
 
 /* CSS for A Docker Immersion */
 
+$primary-color: #cc5c12;
+
 body {
+  font-family: 'Open Sans', sans-serif;
   padding-top: 70px;
 }
 
@@ -11,11 +14,41 @@ footer {
   padding-top: 70px;
 }
 
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+a:hover,
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.navbar {
+  font-family: 'Nunito', sans-serif;
+  min-height: 70px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  line-height: 40px;
+  height: 70px;
+}
+
 .navbar-nav {
   float: right;
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 .start-text {
+  font-family: 'Nunito', sans-serif;
   font-size: 5em;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -24,6 +57,7 @@ footer {
 .site-heading {
   color: #ffffff;
   background-color: #333333;
+  font-family: 'Nunito', sans-serif;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -31,7 +65,15 @@ footer {
 }
 
 .project-name {
-  font-size: 4em;
+  font-size: 6em;
+  color: $primary-color;
+}
+.lead {
+  font-size: 2.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
 }
 
 h1, h2 {
@@ -41,4 +83,8 @@ h1, h2 {
 
 h1 {
   font-size: 48px;
+}
+
+pre {
+  font-family: 'Source Code Pro', monospace;
 }
