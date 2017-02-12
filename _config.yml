@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: A Docker Immersion
+title: Container Immersion
 email: mike@mikekasberg.com
 description: > # this means to ignore newlines until "baseurl:"
-  A Docker Immersion is a guided tour that walks through the fundamentals of
+  Container Immersion is a guided tour that walks through the fundamentals of
   Docker, inspired by the premise that to know a thing is to do it.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -36,3 +36,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - README.md
+
