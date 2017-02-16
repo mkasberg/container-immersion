@@ -32,7 +32,7 @@
                     
                     <ol>
                         {% for lab in site.labs %}
-                        <li><a href="{{ site.github.url }}{{ lab.url }}">{{ lab.title }}</a></li>
+                        <li><a href="{{ lab.url | relative_url }}">{{ lab.title }}</a></li>
                         {% endfor %}
                     </ol>
                 </div>
