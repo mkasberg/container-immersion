@@ -14,7 +14,7 @@ Let's run some simple commands in Docker. For this, we're going to use the
 run most Linux commands.
 
 ```
-$ docker run ubuntu:latest echo "Hello from Ubuntu!"
+$ docker run ubuntu:latest echo "Hello from Ubuntu."
 Unable to find image 'ubuntu:latest' locally
 latest: Pulling from library/ubuntu
 
@@ -23,7 +23,7 @@ latest: Pulling from library/ubuntu
 2508cbcde94b: Pull complete 
 Digest: sha256:71cd81252a3563a03ad8daee81047b62ab5d892ebbfbf71cf53415f29c130950
 Status: Downloaded newer image for ubuntu:latest
-Hello from Ubuntu!
+Hello from Ubuntu.
 ```
 
 Let's break that down:
@@ -32,7 +32,7 @@ Let's break that down:
  - `ubuntu` is the name of the Docker image we're running in our container. This
    image comes from Docker Hub.
  - `latest` is the “tag”, or version of the image that we want to use.
- - `echo "Hello from Ubuntu!"` is the command that we're running inside the
+ - `echo "Hello from Ubuntu."` is the command that we're running inside the
    container.
 
 Docker pulls the image for Ubuntu automatically if it isn't already cached. Then
