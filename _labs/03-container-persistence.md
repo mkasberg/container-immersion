@@ -70,20 +70,11 @@ root@ebde4b281dec:/# exit
 exit
 ```
 
-With `docker start`, we can re-start a stopped container. This can be useful for
-things like debugging, but is not a normal part of the Docker workflow.
-
-As you might have realized, we have several "dead" stopped containers hanging
-around on our filesystem. We don't need those containers anymore, so let's clean
-them up. In the commands below, I'm resuing the container IDs from `docker ps
--a` above.
-
-```
-$ docker rm cd9f034e05e6
-cd9f034e05e6
-$ docker rm ebde4b281dec
-ebde4b281dec
-```
+Because we restarted our stopped container instead of running a new container,
+our changes to the filesystem were present. We can see the contents of the
+`foo.txt` file that we made. With `docker start`, we can re-start a stopped
+container. This can be useful for things like debugging, but is not a normal
+part of the Docker workflow, so don't get used to using it too often.
 
 Feel free to play around with the things we've learned so far to get comfortable
 with them. When you're ready, move on to the next lab.
