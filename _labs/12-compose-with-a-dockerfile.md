@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 11
+number: 12
 title:  "Compose with a Dockerfile"
 ---
 

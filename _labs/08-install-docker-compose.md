@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 7
+number: 8
 title:  "Install Docker Compose"
 ---
 

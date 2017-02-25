@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 6
+number: 7
 title:  "Serving PHP"
 ---
 

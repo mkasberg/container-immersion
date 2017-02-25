@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 9
+number: 10
 title:  "Query the Database"
 ---
 

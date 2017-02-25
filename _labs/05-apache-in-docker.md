@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 4
+number: 5
 title:  "Apache in Docker"
 ---
 

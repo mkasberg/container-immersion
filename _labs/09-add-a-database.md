@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 8
+number: 9
 title:  "Add a Database"
 ---
 

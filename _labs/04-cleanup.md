@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 3
+number: 4
 title:  "Cleanup"
 ---
 

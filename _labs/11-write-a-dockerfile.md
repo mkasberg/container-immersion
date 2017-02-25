@@ -1,6 +1,6 @@
 ---
 layout: lab
-number: 10
+number: 11
 title:  "Write a Dockerfile"
 ---
 
