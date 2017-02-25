@@ -10,8 +10,8 @@ and clean them up.
 
 ## Find Our Apache Container
 
-If you just completed the previous lab, your Apache container should be serving
-your web page. Let's see if it's running:
+If you just completed the previous lab, your Apache container should still be
+running,  serving your web page. Let's see:
 
 ```
 $ docker ps
@@ -24,6 +24,8 @@ system. Because our Apache container is running in daemon mode, we need to use
 `docker ps` to see it running. The `docker ps` command gives us some basic
 information about uptime, our container ID, and the ports its using.
 
+## View Logs
+
 Let's get some more info from the container. We can use `docker logs` to see
 what Apache's logging.
 
@@ -35,9 +37,18 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 172.17.0.1 - - [07/Feb/2017:04:24:02 +0000] "GET / HTTP/1.1" 200 105
 ```
 
-`docker logs` is a command that shows us logs from one of our docker containers.
-Normally, a Docker log comes from stdout of the process that's running in the
-container. In this case, we referred to the container by its name, `its-apache`.
-We could also have used the container ID - names and IDs are normally
-interchangeable in Docker commands.
+The logs from our its-apache container show us everything apache's logging. You
+should be able to see HTTP requests in the logs as you make them from your
+browser. This is pretty neat - the `docker logs` command is actually showing us
+the logs from the process (in this case, Apache httpd) that's running _inside_ the
+container.
+
+## Stopping the Container
+
+The container will continue to run in daemon mode until you stop it. Let's stop
+the container now, before moving on to the next lab.
+
+```
+$ docker stop its-apache
+```
 

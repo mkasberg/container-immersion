@@ -31,6 +31,7 @@ and edit its contents as below:
 ## Try to Serve It
 
 Let's try to serve our new PHP website from our Apache container.
+
 ```
 $ docker run -d -p 80:80 --name its-apache -v $(pwd):/usr/local/apache2/htdocs/ httpd:2.4
 ```
@@ -47,8 +48,12 @@ need. For now, all we need is a really common PHP configuration. Searching
 [Docker Hub](https://hub.docker.com/) leads us to the [Official PHP
 Image](https://hub.docker.com/_/php/).
 
-Let's try running our website in a Docker container based on that image.
+Let's try running our website in a Docker container based on that image. Also,
+our its-apache container is still running in daemon mode. We'll need to stop
+that first.
+
 ```
+$ docker stop its-apache
 $ docker run -d -p 80:80 --name its-php -v $(pwd):/var/www/html php:7.1-apache
 ```
 
@@ -60,4 +65,11 @@ One of the best attributes of Docker is the ease with which it can provide a
 container with the features you need. When we needed our server to support PHP,
 we simply found a container image with that support built in. With Docker, you
 can always find or build a container with whatever dependencies you need.
+
+Remember, we ran our PHP container in daemon mode. So don't forget to stop the
+container when you're done.
+
+```
+$ docker stop its-php
+```
 
