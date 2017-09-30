@@ -31,7 +31,7 @@ collections:
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
