@@ -38,4 +38,5 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
+  - CONTRIBUTING.md
 
