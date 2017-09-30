@@ -9,8 +9,11 @@ To setup Docker on your machine.
 
 ## Install Docker
 
-[Install Docker](https://www.docker.com/products/docker) by following the
-official installation instructions for your platform.
+Install Docker CE for
+[Windows](https://docs.docker.com/docker-for-windows/install/),
+[Mac](https://docs.docker.com/docker-for-mac/install/), or
+[Linux](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/) by
+following the official installation instructions for your platform.
 
 ## Test Your Installation
 
