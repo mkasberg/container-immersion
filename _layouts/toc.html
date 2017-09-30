@@ -14,7 +14,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-                                <h1 class="project-name text-left">{{ site.title | default: site.github.repository_name }}</h1>
+                                <h1 style="font-size:60px;" class="project-name text-left">{{ site.title | default: site.github.repository_name }}</h1>
                             </div>
                             <div class="col-sm-offset-1 col-sm-11">
                                 <h2 class="lead text-left">{{ site.description | default: site.github.project_tagline }}</h2>
@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-offset-2 col-lg-8 text-left">
                     <h2>Table of Contents</h2>
-                    
+
                     <ol>
                         {% for lab in site.labs %}
                         <li><a href="{{ lab.url | relative_url }}">{{ lab.title }}</a></li>
