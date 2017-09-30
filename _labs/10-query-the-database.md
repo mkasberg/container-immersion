@@ -12,7 +12,9 @@ Make two containers interact using Docker Compose.
 In our last lab, we created a database container that our website could use.
 Let's modify our website to query the database. Edit `index.html` as below. If
 you don't completely understand all the code, don't worry! We're focusing on
-Docker here, not PHP.
+Docker here, not PHP. The important thing to understand is that PHP code running
+in our `web` container (PHP/Apache) is going to run a query against the SQL
+database running in our `db` container by connecting to it at the hostname `db`.
 
 **index.php**
 
