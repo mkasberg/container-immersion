@@ -64,8 +64,14 @@ a:hover,
   margin-bottom: 40px;
 }
 
+.site-footer {
+  font-size:1em;
+  text-align:center;
+  padding-bottom:10px;
+}
+
 .project-name {
-  font-size: 6em;
+  font-size:5.5em;
   color: $primary-color;
 }
 .lead {
