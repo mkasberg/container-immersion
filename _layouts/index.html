@@ -25,9 +25,9 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-left">
+                <div class="col-lg-8 col-lg-offset-2 text-left">
                     <img src="{{ '/assets/img/docker_small_h-trans.png' | relative_url }}" alt="Docker logo" />
                     <p class="lead">
                         Docker is a powerful tool for managing and interacting with Linux Containers.
@@ -39,18 +39,18 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-12 text-right start-text">
+                <div class="col-lg-8 col-lg-offset-2 text-right start-text">
                     <a href="{{ '/labs/01-setup.html' | relative_url }}"><i class="fa fa-arrow-circle-right"></i> Begin Immersion</a>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12 text-left">
+                <div class="col-lg-8 col-lg-offset-2 text-left">
                     <p class="lead">
                         Container Immersion is an open source project. To contribute, visit
                         our <a href="https://github.com/mkasberg/container-immersion"><i class="fa fa-github"></i> Project Page</a>.
                     </p>
-                    <p>
+                    <p class="lead">
                         Container Immersion is inspired by <a href="http://gitimmersion.com/">Git Immersion</a>,
                         a excellent immersion-style tutorial for Git.
                     </p>
@@ -58,9 +58,9 @@
             </div>
 
 
-            {% include footer_row.html %}
 
         </div>
+        {% include footer_row.html %}
 
         {% include js.html %}
     </body>
