@@ -47,6 +47,41 @@ a:hover,
   padding-top: 10px;
 }
 
+.btn-nav {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  background-color: #222;
+  transition: all 0.2s;
+}
+
+.btn-nav:hover {
+  color: #ccc;
+  background-color: #000;
+  transition: all 0.2s;
+}
+
+.btn-nav .fa,
+.btn-nav:hover .fa {
+  transition: all 0.3s;
+}
+
+.btn-nav .fa-chevron-left {
+  margin-right: 5px;
+}
+
+.btn-nav:hover .fa-chevron-left {
+  transform: translateX(-4px);
+}
+
+.btn-nav .fa-chevron-right {
+  margin-left: 5px;
+}
+
+.btn-nav:hover .fa-chevron-right {
+  transform: translateX(4px);
+}
+
 .start-text {
   font-family: 'Nunito', sans-serif;
   font-size: 5em;
