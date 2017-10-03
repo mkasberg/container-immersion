@@ -30,7 +30,7 @@
                 <div class="col-lg-offset-2 col-lg-8 text-left">
                     <h2>Table of Contents</h2>
                     
-                    <ol>
+                    <ol class="large">
                         {% for lab in site.labs %}
                         <li><a href="{{ lab.url | relative_url }}">{{ lab.title }}</a></li>
                         {% endfor %}
