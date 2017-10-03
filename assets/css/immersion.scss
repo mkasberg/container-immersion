@@ -70,7 +70,7 @@ a:hover,
 }
 
 .project-name {
-  font-size: 6em;
+  font-size:5.5em;
   color: $primary-color;
 }
 .lead {
@@ -92,4 +92,8 @@ h1 {
 
 pre {
   font-family: 'Source Code Pro', monospace;
+}
+
+.big{
+  font-size:1.5em;
 }
