@@ -11,7 +11,7 @@ body {
 }
 
 footer {
-  padding-top: 70px;
+  margin-top: 70px;
 }
 
 .navbar-inverse .navbar-brand,
@@ -65,9 +65,8 @@ a:hover,
 }
 
 .site-footer {
-  font-size:1em;
-  text-align:center;
-  padding-bottom:10px;
+	background-color: #eee;
+	padding: 1rem 3rem 1rem 3rem;
 }
 
 .project-name {
@@ -75,7 +74,7 @@ a:hover,
   color: $primary-color;
 }
 .lead {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
