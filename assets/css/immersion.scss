@@ -97,3 +97,14 @@ pre {
 .big{
   font-size:1.5em;
 }
+
+.nav{
+  .btn{
+    background: black;
+    color: white;
+    &:hover{
+      background: white;
+      color: black;
+    }
+  }
+}
