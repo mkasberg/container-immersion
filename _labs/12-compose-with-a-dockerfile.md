@@ -19,7 +19,7 @@ directory. When you're done, your file should look like this:
 
 **docker-compose.yml**
 
-```
+```yaml
 version: '3'
 
 services:

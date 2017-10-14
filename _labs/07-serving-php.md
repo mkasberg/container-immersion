@@ -15,7 +15,7 @@ and edit its contents as below:
 
 **index.php**
 
-```
+```php
 <html>
 <h1>My Website</h1>
 <p>This web site is being served from inside a Docker container!</p>

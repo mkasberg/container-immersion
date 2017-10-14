@@ -28,7 +28,7 @@ should be named `Dockerfile` (with no extension).
 
 **Dockerfile**
 
-```
+```docker
 FROM php:7.1-apache
 
 RUN docker-php-ext-install -j$(nproc) pdo_mysql

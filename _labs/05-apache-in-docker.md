@@ -23,7 +23,7 @@ called `index.html` in your `my-docker-website` folder.
 
 **index.html**
 
-```
+```html
 <html>
 <h1>My Website</h1>
 <p>This web site is being served from inside a Docker container!</p>

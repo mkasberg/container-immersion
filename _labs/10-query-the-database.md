@@ -18,7 +18,7 @@ database running in our `db` container by connecting to it at the hostname `db`.
 
 **index.php**
 
-```
+```php
 <html>
 <h1>My Website</h1>
 <p>This web site is being served from inside a Docker container!</p>
