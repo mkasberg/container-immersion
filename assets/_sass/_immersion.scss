@@ -33,38 +33,6 @@ footer {
   margin-top: 70px;
 }
 
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav > li > a,
-.navbar-inverse .navbar-nav > li > a {
-  color: $site-heading-color;
-}
-
-a:hover,
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus,
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: $primary-color;
-  text-decoration: none;
-}
-
-.navbar {
-  font-family: $heading-font;
-  min-height: 70px;
-}
-
-.navbar-brand {
-  font-size: 30px;
-  line-height: 40px;
-  height: 70px;
-}
-
-.navbar-nav {
-  float: right;
-  font-size: 18px;
-  padding-top: 10px;
-}
 
 .btn-nav {
   padding-left: 20px;
@@ -109,16 +77,6 @@ a:hover,
   font-family: $heading-font;
   font-size: 5em;
   margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.site-heading {
-  color: $site-heading-color;
-  background-color: $site-heading-bg;
-  font-family: $heading-font;
-  margin-top: -20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin-bottom: 40px;
 }
 

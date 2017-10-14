@@ -12,3 +12,15 @@ $footer-bg: #eee;
 $body-font: 'Open Sans', sans-serif;
 $heading-font: 'Nunito', sans-serif;
 $pre-font: 'Source Code Pro', monospace;
+
+// Breakpoints (following Boostrap style)
+$small: 576px;
+$medium: 767px;
+$large: 992px;
+$extra-large: 1200px;
+
+// Breakpoint Alias (again to match Bootstrap)
+$sm: $small;
+$md: $medium;
+$lg: $large;
+$xl: $extra-large;
