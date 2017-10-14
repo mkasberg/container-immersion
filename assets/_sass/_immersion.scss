@@ -102,7 +102,11 @@ footer {
 .terminal {
   .highlight {
     background-color: #000000;
-    color: #008000;
+    color: #00ff00;
+
+    code {
+      font-family: $pre-font;
+    }
   }
 }
 
