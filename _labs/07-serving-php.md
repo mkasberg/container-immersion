@@ -32,6 +32,7 @@ and edit its contents as below:
 
 Let's try to serve our new PHP website from our Apache container.
 
+{:.terminal}
 ```
 $ docker run -d -p 80:80 --name its-apache -v $(pwd):/usr/local/apache2/htdocs/ httpd:2.4
 ```
@@ -52,6 +53,7 @@ Let's try running our website in a Docker container based on that image. Also,
 our its-apache container is still running in daemon mode. We'll need to stop
 that first.
 
+{:.terminal}
 ```
 $ docker stop its-apache
 $ docker run -d -p 80:80 --name its-php -v $(pwd):/var/www/html php:7.1-apache
@@ -69,7 +71,7 @@ can always find or build a container with whatever dependencies you need.
 Remember, we ran our PHP container in daemon mode. So don't forget to stop the
 container when you're done.
 
+{:.terminal}
 ```
 $ docker stop its-php
 ```
-

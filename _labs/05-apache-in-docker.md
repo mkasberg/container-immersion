@@ -12,6 +12,7 @@ Serve an html page from a Docker container.
 For this lab, we're going to make a simple website project. Let's start with
 something basic.
 
+{:.terminal}
 ```
 $ mkdir my-docker-website
 $ cd my-docker-website
@@ -36,6 +37,7 @@ container that runs Apache. A quick search on [Docker
 Hub](https://hub.docker.com/) leads us to this [Official Apache
 Image](https://hub.docker.com/_/httpd/). Let's use that.
 
+{:.terminal}
 ```
 $ docker run -d -p 80:80 --name its-apache -v $(pwd):/usr/local/apache2/htdocs/ httpd:2.4
 Unable to find image 'httpd:2.4' locally
@@ -61,4 +63,3 @@ website: [http://localhost](http://localhost).
 
 In the next lab, we'll learn more about how to see what Docker's running in the
 background.
-

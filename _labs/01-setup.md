@@ -20,6 +20,7 @@ following the official installation instructions for your platform.
 To make sure that the installation worked, run the following Docker command. If
 it produces the welcome message, you're ready to move on to the next lab.
 
+{:.terminal}
 ```
 $ docker run hello-world
 
@@ -43,4 +44,3 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
-

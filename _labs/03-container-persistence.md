@@ -15,6 +15,7 @@ Inside a container, we can run commands just like any other Linux prompt. We can
 also edit files.  Let's get back to a command prompt inside an Ubuntu container
 and create a text file.
 
+{:.terminal}
 ```
 $ docker run -it ubuntu:latest /bin/bash
 root@c267f778d237:/# echo "Look, I can write to a file!" > foo.txt
@@ -29,6 +30,7 @@ exit
 We were able to write to the filesystem inside the container. Cool. Let's go
 back and look at that again.
 
+{:.terminal}
 ```
 $ docker run -it ubuntu:latest /bin/bash
 root@cd9f034e05e6:/# cat foo.txt
@@ -50,6 +52,7 @@ shared with the first container we ran.
 Can we get our file back? As a matter of fact, yes. We can get a list of all the
 containers on our machine (including the stopped ones) with `docker ps -a`.
 
+{:.terminal}
 ```
 $ docker ps -a
 CONTAINER ID    IMAGE           COMMAND     CREATED         STATUS                  	PORTS   NAMES
@@ -60,6 +63,7 @@ ebde4b281dec    ubuntu:latest   "/bin/bash" 10 minutes ago  Exited (0) 5 minutes
 We can see our stopped container there. Let's get back to bash in the container
 where we made our file. (**Note:** Your ID will be different than mine!)
 
+{:.terminal}
 ```
 $ docker start -i ebde4b281dec
 root@ebde4b281dec:/# cat foo.txt
@@ -78,4 +82,3 @@ part of the Docker workflow, so don't get used to using it too often.
 
 Feel free to play around with the things we've learned so far to get comfortable
 with them. When you're ready, move on to the next lab.
-
