@@ -13,6 +13,7 @@ and clean them up.
 If you just completed the previous lab, your Apache container should still be
 running,  serving your web page. Let's see:
 
+{:.terminal}
 ```
 $ docker ps
 CONTAINER ID    IMAGE       COMMAND     	CREATED		STATUS      	PORTS       		NAMES
@@ -29,6 +30,7 @@ information about uptime, our container ID, and the ports its using.
 Let's get some more info from the container. We can use `docker logs` to see
 what Apache's logging.
 
+{:.terminal}
 ```
 $ docker logs its-apache
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
@@ -48,7 +50,7 @@ container.
 The container will continue to run in daemon mode until you stop it. Let's stop
 the container now, before moving on to the next lab.
 
+{:.terminal}
 ```
 $ docker stop its-apache
 ```
-

@@ -36,13 +36,14 @@ RUN docker-php-ext-install -j$(nproc) pdo_mysql
 
 That's a simple Dockerfile, but it's all we need for now. The
 `docker-php-ext-install` command is a script that comes with the PHP Docker
-image, and is documented in that image's documentation. 
+image, and is documented in that image's documentation.
 
 ## Test the Dockerfile
 
 To test the Dockerfile, we need to build it. Building a Dockerfile is the
 process that turns a Dockerfile into a Docker image.
 
+{:.terminal}
 ```
 $ docker build -t my-php-image:latest ./
 ```
@@ -57,6 +58,7 @@ you run the `docker images` command, you'll see it listed along with the other
 Docker images you have on your system. We can run your image just like any other
 image.
 
+{:.terminal}
 ```
 $ docker run --rm -it my-php-image:latest /bin/bash
 ```
@@ -72,4 +74,3 @@ around inside them.
 
 You can look around inside the container all you want. When you're satisfied,
 exit the container. Let's get back to our website project.
-

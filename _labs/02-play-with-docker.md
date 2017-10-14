@@ -13,6 +13,7 @@ Let's run some simple commands in Docker. For this, we're going to use the
 [Ubuntu](https://hub.docker.com/_/ubuntu/) Docker image, which will allow us to
 run most Linux commands.
 
+{:.terminal}
 ```
 $ docker run ubuntu:latest echo "Hello from Ubuntu."
 Unable to find image 'ubuntu:latest' locally
@@ -20,7 +21,7 @@ latest: Pulling from library/ubuntu
 
 ...
 
-2508cbcde94b: Pull complete 
+2508cbcde94b: Pull complete
 Digest: sha256:71cd81252a3563a03ad8daee81047b62ab5d892ebbfbf71cf53415f29c130950
 Status: Downloaded newer image for ubuntu:latest
 Hello from Ubuntu.
@@ -43,6 +44,7 @@ it runs our echo command.
 Instead of running `echo`, we can ask Docker to run `/bin/bash` inside the
 Ubuntu container. This will get us to an interactive shell.
 
+{:.terminal}
 ```
 $ docker run -it ubuntu:latest /bin/bash
 root@c267f778d237:/#
@@ -54,6 +56,7 @@ host machine. (It also indicates that you’re the *root* user inside the
 container \- more on that later). Let's run some simple commands and have a look
 around.
 
+{:.terminal}
 ```
 root@c267f778d237:/# echo "Hello from a Bash prompt in an Ubuntu container!"
 Hello from a Bash prompt in an Ubuntu container!
@@ -65,4 +68,3 @@ bin boot dev etc home lib lib64 media mnt opt proc root run sbin srv sys tmp usr
 
 Feel free to experiment some more inside the container, when you're done, run
 `exit` to exit Bash and stop the container. Then move on to the next lab.
-

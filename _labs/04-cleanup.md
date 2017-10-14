@@ -12,6 +12,7 @@ Learn to view and name docker containers and clean them up.
 Docker comes with a command to view the containers that are currently running on
 your system. Let's try it now.
 
+{:.terminal}
 ```
 $ docker ps
 CONTAINER ID    IMAGE       COMMAND     CREATED		STATUS      PORTS       NAMES
@@ -20,6 +21,7 @@ CONTAINER ID    IMAGE       COMMAND     CREATED		STATUS      PORTS       NAMES
 As you might have guessed, nothing’s running. Let's use the `-a` flag to see
 *all* containers, including stopped ones.
 
+{:.terminal}
 ```
 $ docker ps -a
 CONTAINER ID    IMAGE           COMMAND         CREATED             STATUS                         PORTS    NAMES
@@ -35,6 +37,7 @@ own names to containers.
 
 ## Name Your Containers
 
+{:.terminal}
 ```
 $ docker run --name my-container ubuntu:latest echo "Hello from my-container."
 $ docker ps -a
@@ -51,6 +54,7 @@ Even though that container exited immediately, the container still exists on
 your system (as discussed in the previous lab). Because of that, you can't
 re-use the same name again.
 
+{:.terminal}
 ```
 $ docker run --name my-container ubuntu:latest echo "Hello from my-container."
 docker: Error response from daemon: Conflict. The container name "/my-container" is already in use by container
@@ -71,6 +75,7 @@ name. Let's remove `my-container`, along with several others we created in
 previous labs but don't need anymore. Note that **your IDs will be different
 than mine**!
 
+{:.terminal}
 ```
 $ docker rm my-container
 my-container
@@ -87,4 +92,3 @@ container when we’re finished with it so we don’t have to clean it up later.
 Newer versions of Docker include a command called `docker system prune` that can
 help you clean up a large number of stale containers and images from your
 system. We'll discuss this in more depth later.
-
