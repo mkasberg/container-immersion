@@ -1,3 +1,10 @@
 //
 // SCSS Mixins
 //
+
+// Min width media-query mixin
+@mixin media-query-min($breakpoint) {
+	@media screen and (min-width: #{$breakpoint}) {
+		@content;
+	}
+}
