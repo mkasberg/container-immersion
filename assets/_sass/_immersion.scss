@@ -1,13 +1,32 @@
----
----
-
-/* CSS for A Docker Immersion */
-
-$primary-color: #cc5c12;
-
+//
+// Main SCSS File for Container-Immersion
+//
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $body-font;
   padding-top: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+
+h1,
+h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+pre {
+  font-family: $pre-font;
 }
 
 footer {
@@ -16,22 +35,22 @@ footer {
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav>li>a,
-.navbar-inverse .navbar-nav>li>a {
-  color: #ffffff;
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a {
+  color: $site-heading-color;
 }
 
 a:hover,
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
   color: $primary-color;
   text-decoration: none;
 }
 
 .navbar {
-  font-family: 'Nunito', sans-serif;
+  font-family: $heading-font;
   min-height: 70px;
 }
 
@@ -87,16 +106,16 @@ a:hover,
 }
 
 .start-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: $heading-font;
   font-size: 5em;
   margin-top: 30px;
   margin-bottom: 40px;
 }
 
 .site-heading {
-  color: #ffffff;
-  background-color: #333333;
-  font-family: 'Nunito', sans-serif;
+  color: $site-heading-color;
+  background-color: $site-heading-bg;
+  font-family: $heading-font;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -104,36 +123,20 @@ a:hover,
 }
 
 .site-footer {
-  background-color: #eee;
+  background-color: $footer-bg;
   padding: 1rem 3rem 1rem 3rem;
   text-align: center;
 }
 
 .project-name {
-  font-size:5.5em;
+  font-size: 5.5em;
   color: $primary-color;
 }
+
 .lead {
   font-size: 2em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nunito', sans-serif;
-}
-
-h1, h2 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-pre {
-  font-family: 'Source Code Pro', monospace;
-}
-
-.big{
-  font-size:1.5em;
+.big {
+  font-size: 1.5em;
 }

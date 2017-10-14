@@ -40,3 +40,6 @@ exclude:
   - README.md
   - CONTRIBUTING.md
 
+sass:
+    sass_dir: assets/_sass
+
