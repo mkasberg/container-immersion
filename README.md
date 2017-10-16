@@ -1,10 +1,17 @@
 # Container Immersion
-🐳 A tour that walks through the fundamentals of Docker.
+🐳 A tour that walks through the fundamentals of Docker. Learn Docker by doing
+it.
 
 Go to [**Container Immersion**](https://mkasberg.github.io/container-immersion).
 
 Or, skip ahead to the [Table of
 Contents](https://mkasberg.github.io/container-immersion/toc.html).
+
+Container Immersion is hosted on [Github Pages](https://pages.github.com/). This
+repository contains the source files for the website. If you want to use
+container immersion to learn Docker, visit the site at the links above. You only
+need to checkout the code in this repository if you want to contribute to the
+site.
 
 ## About Container Immersion
 
