@@ -30,7 +30,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 exclude:
