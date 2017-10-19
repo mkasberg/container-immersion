@@ -37,5 +37,5 @@ Verify that you have a recent version of Docker Compose installed.
 {:.terminal}
 ```
 $ docker-compose --version
-docker-compose version 1.11.1, build 7c5d5e4
+docker-compose version 1.16.1, build 6d1ac21
 ```
