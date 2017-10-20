@@ -202,8 +202,5 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-theme-cayman (~> 0.0.3)
 
-RUBY VERSION
-   ruby 2.3.3p222
-
 BUNDLED WITH
    1.14.3
