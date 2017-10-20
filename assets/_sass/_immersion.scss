@@ -87,9 +87,16 @@ footer {
 }
 
 .project-name {
+  display: inline;
   font-size: 5.5em;
   color: $primary-color;
 }
+
+.project-image {
+  display: inline;
+  position: relative;
+  width: 30px;
+ }
 
 .lead {
   font-size: 2em;
