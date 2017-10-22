@@ -43,7 +43,7 @@ footer {
 }
 
 .btn-nav:hover {
-  color: #ccc;
+  color: $primary-color;
   background-color: #000;
   transition: all 0.2s;
 }
@@ -101,8 +101,10 @@ footer {
 
 .terminal {
   .highlight {
-    background-color: #000000;
-    color: #00ff00;
+    pre {
+      background-color: #000000;
+      color: #00ff00;
+    }
 
     code {
       font-family: $pre-font;
