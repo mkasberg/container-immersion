@@ -89,6 +89,15 @@ footer {
 .project-name {
   font-size: 5.5em;
   color: $primary-color;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    background: transparent url('../img/docker_front_page.png') 0 0 no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .lead {
