@@ -37,6 +37,9 @@ own names to containers.
 
 ## Name Your Containers
 
+In lab 03, we used names to help us keep track of our containers. Let's learn
+more about that now.
+
 {:.terminal}
 ```
 $ docker run --name my-container ubuntu:latest echo "Hello from my-container."

@@ -17,7 +17,7 @@ and create a text file.
 
 {:.terminal}
 ```
-$ docker run -it ubuntu:latest /bin/bash
+$ docker run -it --name lab_03_container_01 ubuntu:latest /bin/bash
 root@c267f778d237:/# echo "Look, I can write to a file!" > foo.txt
 root@c267f778d237:/# ls
 bin boot dev etc foo.txt home lib lib64 media mnt opt proc root run sbin srv sys tmp usr var
@@ -32,7 +32,7 @@ back and look at that again.
 
 {:.terminal}
 ```
-$ docker run -it ubuntu:latest /bin/bash
+$ docker run -it --name lab_03_container_02 ubuntu:latest /bin/bash
 root@cd9f034e05e6:/# cat foo.txt
 cat: foo.txt: No such file or directory
 root@cd9f034e05e6:/# ls
@@ -55,17 +55,19 @@ containers on our machine (including the stopped ones) with `docker ps -a`.
 {:.terminal}
 ```
 $ docker ps -a
-CONTAINER ID    IMAGE           COMMAND     CREATED         STATUS                  	PORTS   NAMES
-cd9f034e05e6    ubuntu:latest   "/bin/bash" 5 minutes ago   Exited (0) 4 minutes ago            eager_lamarr
-ebde4b281dec    ubuntu:latest   "/bin/bash" 10 minutes ago  Exited (0) 5 minutes ago            competent_saha
+CONTAINER ID  IMAGE         COMMAND     CREATED        STATUS                   PORTS  NAMES
+cd9f034e05e6  ubuntu:latest "/bin/bash" 5 minutes ago  Exited (0) 4 minutes ago        lab_03_container_02
+ebde4b281dec  ubuntu:latest "/bin/bash" 10 minutes ago Exited (0) 5 minutes ago        lab_03_container_01
 ```
 
 We can see our stopped container there. Let's get back to bash in the container
-where we made our file. (**Note:** Your ID will be different than mine!)
+where we made our file. You can do this with the container's name or ID. We
+named our containers earlier in this lab for convenience and easy
+identification, so we'll use that now to restart the stopped container.
 
 {:.terminal}
 ```
-$ docker start -i ebde4b281dec
+$ docker start -i lab_03_container_01
 root@ebde4b281dec:/# cat foo.txt
 Look, I can write to a file!
 root@ebde4b281dec:/# ls
