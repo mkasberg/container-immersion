@@ -28,10 +28,12 @@ effective for others as I found Git Immersion to be for me.
 ## Setup Dev Environment
 
  1. Clone the repository.
-  `git clone git@github.com:mkasberg/container-immersion.git`
+    `git clone git@github.com:mkasberg/container-immersion.git`
  2. Make sure Bundler is installed. `gem install bundler`
  3. Install Jekyll & dependencies. `cd container-immersion && bundle install
-  --path vendor/bundle` (Path optional, but encouraged.)
+    --path vendor/bundle` (Path optional, but encouraged.)
+    a. You may need some native dependencies installed to build the Ruby
+       dependencies. On Ubuntu: `sudo apt install build-essential zlib1g-dev`
  4. Run the site. `bundle exec jekyll serve`. You can visit the site at
   [http://localhost:4000/container-immersion/](http://localhost:4000/container-immersion/).
   Essentially, this is just Jekyll. So read the [Jekyll](http://jekyllrb.com/)
