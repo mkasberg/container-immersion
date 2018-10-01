@@ -109,14 +109,38 @@ footer {
 }
 
 .terminal {
+  &:before {
+    display: table;
+    width: 100%;
+    padding: 5px 0;
+    font: 400 16px/24px $body-font;
+    color: #444;
+    text-align: center;
+    content: "terminal";
+    border-radius: 5px 5px 0 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background-color: #f7f7f7;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y3ZjdmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjclIiBzdG9wLWNvbG9yPSIjY2ZjZmNmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FhYWFhYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), color-stop(7%, #dbdbdb), to(#bababa));
+    background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #dbdbdb 7%, #bababa 100%);
+    background-image: -moz-linear-gradient(top, #f7f7f7 0%, #dbdbdb 7%, #bababa 100%);
+    background-image: -o-linear-gradient(top, #f7f7f7 0%, #dbdbdb 7%, #bababa 100%);
+    background-image: linear-gradient(top, #f7f7f7 0%,#dbdbdb 7%,#bababa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#bababa',GradientType=0 );
+  }
+
   .highlight {
     pre {
-      background-color: #000000;
       color: #00ff00;
+      background-color: #000000;
+      border: 0;
+      border-radius: 0 0 6px 6px;
     }
 
     code {
       font-family: $pre-font;
+      border-radius: 0 0 6px 6px;
+      border: 0;
     }
   }
 }
@@ -125,6 +149,5 @@ code {
     font-size: 85%;
     color: #000;
     background-color: rgba(27,31,35,0.05);
-    border-radius: 3px;
     font-family: $pre-font;
 }
