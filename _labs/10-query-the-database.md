@@ -10,7 +10,7 @@ Make two containers interact using Docker Compose.
 ## Modify the Website
 
 In our last lab, we created a database container that our website could use.
-Let's modify our website to query the database. Edit `index.html` as below. If
+Let's modify our website to query the database. Edit `index.php` as below. If
 you don't completely understand all the code, don't worry! We're focusing on
 Docker here, not PHP. The important thing to understand is that PHP code running
 in our `web` container (PHP/Apache) is going to run a query against the SQL
@@ -51,9 +51,11 @@ database running in our `db` container by connecting to it at the hostname `db`.
 Cool! Our website is going to query a database, and it's all happening in
 Docker!
 
+Run `docker-compose up` to start services defined in `docker-compose.yml`.
+
 Wait a minute... If you try to visit the website at
 [http://localhost](http://localhost), you'll see an error message. `Fatal error:
-Uncaught PDOException: could not find driver in /var/www/html/index.php:13`.
+Uncaught PDOException: could not find driver in /var/www/html/index.php:17`.
 That's not good. As it turns out, we're missing the `pdo_mysql` PHP module in
 our PHP container. In the next lab, we'll learn how to fix that.
 
