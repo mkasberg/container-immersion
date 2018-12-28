@@ -36,7 +36,7 @@ CREATE TABLE `STUDENTS` (
 
 LOCK TABLES `STUDENTS` WRITE;
 /*!40000 ALTER TABLE `STUDENTS` DISABLE KEYS */;
-INSERT INTO `STUDENTS` VALUES (1,'Robert\'); DROP TABLE STUDENTS;--','Little Bobby Tables'),(2,'Bruce Wayne','Batman'),(3,'Jay Garrick','The Flash');
+INSERT INTO `STUDENTS` VALUES (1,'Robert','Little Bobby Tables'),(2,'Bruce Wayne','Batman'),(3,'Jay Garrick','The Flash');
 /*!40000 ALTER TABLE `STUDENTS` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
