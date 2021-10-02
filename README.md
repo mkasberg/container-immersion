@@ -7,11 +7,12 @@ Go to [**Container Immersion**](https://mkasberg.github.io/container-immersion).
 Or, skip ahead to the [Table of
 Contents](https://mkasberg.github.io/container-immersion/toc.html).
 
-Container Immersion is hosted on [Github Pages](https://pages.github.com/). This
+Container Immersion is a Docker tutorial website built with
+[Jekyll](http://jekyllrb.com/) and hosted on [Github Pages](https://pages.github.com/). This
 repository contains the source files for the website. If you want to use
-container immersion to learn Docker, visit the site at the links above. You only
+container immersion to _learn Docker_, visit the site at the links above. You only
 need to checkout the code in this repository if you want to contribute to the
-site.
+project by modifying or improving the website.
 
 ## About Container Immersion
 
@@ -20,10 +21,10 @@ technology, I used [Git Immersion](http://gitimmersion.com/) to learn how to use
 it. Git Immersion is based on the premise that the best way to learn a new
 technology is by immersing yourself in it and *using it*.
 
-Today, [Docker](https://www.docker.com/) is a young technology. I found Git
-Immersion such an effective tool for learning Git that I was inspired to create
-a similar tutorial for Docker. I hope that Container Immersion can be as
-effective for others as I found Git Immersion to be for me.
+I found Git Immersion such an effective tool for learning Git that I was
+inspired to create a similar tutorial for [Docker](https://www.docker.com/). I
+hope that Container Immersion can be as effective for others as I found Git
+Immersion to be for me.
 
 ## Setup Dev Environment
 
